@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: red;
+    --background-color: black;
+    --text-color: white;
+}
+
+body{
+    background-color: var(--background-color);
+}
