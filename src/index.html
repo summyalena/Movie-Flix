@@ -5,9 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.2/css/boxicons.min.css">
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+/>
+<link href="http://fonts.cdnfonts.com/css/colwell-2" rel="stylesheet">
     <title>MovieFlix</title>
 </head>
 <body>
-    
+    <header>
+       <div class="logo">
+        <i class='bx bxl-flutter'></i>
+        <a href="#Home">MovieFlix</a>
+       </div>
+       <div class="logo-menu">
+        <i class='bx bx-menu-alt-left'></i>
+       </div>
+       <ul class="navbar">
+        <li><a class="home-active" href="#Home">Home</a></li>
+        <li><a href="#Trending">Trending</a></li>
+        <li><a href="#Favorite">Favorite</a></li>
+        <li><a href="#Newsletter">Newsletter</a></li>
+       </ul>
+      <a  href="" class="signIn">
+        Sign In
+      </a>
+    </header>
+
+    <section class="Home swiper" id="Home">
+        <!-- <p>hello</p> -->
+        <div class="swiper-wrapper">
+            <div class="swiper-slide main">
+            <img src="images/avengers.jpg" alt="avengers">
+            <div class="text">
+                <h3>Avengers</h3>
+                <span>It is War Time</span>
+                <a href="#">Book Now</a>
+            </div>
+            </div>
+
+            <div class="swiper-slide main">
+                <img src="images/home1.jpg"/>
+                <div class="text">
+                    <h3>Venom</h3>
+                    <span>The Demo</span>
+                    <a href="#">Book Now</a>
+                </div>
+                </div>
+
+                <div class="swiper-slide main">
+                    <img src="images/home2.jpg"/>
+                    <div class="text">
+                        <h3>Avengers</h3>
+                        <span>It is War Time</span>
+                        <a href="#">Book Now</a>
+                    </div>
+                    </div>
+            
+          </div>
+          <div class="swiper-pagination"></div>
+    </section>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>
