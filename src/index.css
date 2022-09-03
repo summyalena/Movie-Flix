@@ -1,3 +1,6 @@
+
+@import url('http://fonts.cdnfonts.com/css/colwell-2');
+
 *{
     margin: 0;
     padding: 0;
@@ -15,3 +18,132 @@
 body{
     background-color: var(--background-color);
 }
+
+header {
+    height: 4em;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 500;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: var(--main-color); */
+}
+
+section {
+  padding: 3rem 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    z-index: 1000;
+
+}
+
+.logo .bx {
+    color: var(--main-color);
+}
+
+.logo a {
+    color: var(--text-color);
+    font-style: oblique;
+    font-size: 1.7em;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.logo-menu .bx {
+    z-index: 1000;
+}
+
+.logo-menu .bx {
+  z-index: 1000;
+  color: var(--main-color);
+  font-size: 2em;
+  display: none;
+}
+
+.navbar {
+    display: flex;
+    column-gap: 5em;
+}
+
+.navbar li {
+    position: relative;
+}
+.navbar a {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.navbar a::after {
+  content: "";
+  width: 0;
+  position: absolute;
+  height: 0.1em;
+  left: 0;
+  background-color: var(--main-color);
+  bottom: -0.6em;
+  transition: 0.9s all linear;
+}
+
+.navbar a:hover::after,
+ .navbar .home-active::after {
+  width: 100%;
+}
+
+
+.signIn {
+   color: var(--text-color);
+   background-color: var(--main-color);
+   border-radius: 0.2em;
+   padding: 0.6em 0.9em;
+   font-size: 1em;
+   font-weight: 400;
+}
+
+.signIn:hover {
+    background-color: var(--background-color);
+    border: 0.2em solid var(--main-color);
+    cursor: pointer;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background: rgba(0, 0, 0,0.2);
+  align-self: start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+}
+
+.swiper-pagination {
+    width: 0.3em;
+    height: 0.3em;
+    background-color: var(--text-color);
+}
+
+.swiper-pagination-bullet:active {
+    width: 1.2em !important;
+    height: 0.1em !important;
+    background-color: var(--main-color) !important;
+}
+
