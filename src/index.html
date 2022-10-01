@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="index.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.2/css/boxicons.min.css">
 <link
-rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-/>
-<link href="http://fonts.cdnfonts.com/css/colwell-2" rel="stylesheet">
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+<link href="http://fonts.cdnfonts.com/~css/colwell-2" rel="stylesheet">
     <title>MovieFlix</title>
 </head>
 <body>
@@ -27,14 +27,27 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
         <li><a href="#Trending">Trending</a></li>
         <li><a href="#Favorite">Favorite</a></li>
         <li><a href="#Newsletter">Newsletter</a></li>
-       </ul>
-      <a  href="" class="signIn">
-        Sign In
-      </a>
+       <li> <a  href="" class="signIn">Sign In</a></li>  
+    </ul>
+     
+
+      <nav class="mobile-nav">
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-link">Home</li>
+            <li class="mobile-nav-link">Trending</li>
+            <li class="mobile-nav-link">Favorite</li>
+            <li class="mobile-nav-link">Newsletter</li>
+            <li class="mobile-nav-link">Sign In/Join in</li>
+        </ul>
+      </nav>
+      <nav class="nav-bar">
+        <div class="hamburger">
+            <div class="bar"></div>
+        </div>
+      </nav>
     </header>
 
-    <section class="Home swiper" id="Home">
-        <!-- <p>hello</p> -->
+    <section class="swiper mySwiper" id="Home">
         <div class="swiper-wrapper">
             <div class="swiper-slide main">
             <img src="images/avengers.jpg" alt="avengers">
@@ -67,13 +80,14 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
           <div class="swiper-pagination"></div>
     </section>
 
+<section class="api-movies">
+
+</section>
 
 
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="index.js"></script>
 </body>
 
 </html>
