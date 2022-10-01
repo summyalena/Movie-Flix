@@ -1,0 +1,1 @@
+const API = 'https://api.themoviedb.org/3/movie/popular?api_key=bb06d5aded321c7be06d3883d5e3fba5&language=en-US&page=1'

@@ -196,7 +196,7 @@ section {
 }
 
 .swiper-pagination-bullet:active {
-    width: 1.2em !important;
+    width: 1.4em !important;
     height: 0.1em !important;
     background-color: var(--main-color) !important;
 }
