@@ -1,9 +1,9 @@
 
-var swiper = new Swiper(".Home", {
+var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
-      delay: 2500,
+      delay: 3000,
       disableOnInteraction: false,
     },
     pagination: {
@@ -12,20 +12,21 @@ var swiper = new Swiper(".Home", {
     },
   });
 
+  const apiMovies = document.querySelector('.api-movies');
+  const mobileHamburger = document.querySelector('.hamburger');
+  const mobileNav = document.querySelector('.mobile-nav');
+  const mobileNavLi = document.querySelector('.mobile-nav-link')
+
+  mobileHamburger.addEventListener('click', ()=>{
+    mobileHamburger.classList.toggle('is-active');
+    mobileNav.classList.toggle('is-active');
+  })
+
+  mobileNavLi.forEach((link)=>{
+    link.addEventListener('click', ()=>{
+      mobileHamburger.classList.toggle('is-active');
+      mobileNav.classList.toggle('is-active');
+    })
+  })
 
 
-
-
-
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '5ba691afffmsh9f5f80a5281a9fdp1b50b6jsnffaa16c4011a',
-		'X-RapidAPI-Host': 'unogs-unogs-v1.p.rapidapi.com'
-	}
-};
-
-fetch('https://unogs-unogs-v1.p.rapidapi.com/search/deleted', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
